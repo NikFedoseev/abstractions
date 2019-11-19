@@ -1,0 +1,47 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\dev\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\dev\bin;C:\Python27;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit;C:\Users\dev\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\Program Files (x86)\PuTTY;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Users\dev\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Python27;C:\Users\dev\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\dev\AppData\Local\atom\bin;C:\Users\dev\AppData\Local\Microsoft\WindowsApps;C:\Users\dev\AppData\Roaming\npm;C:\Users\dev\AppData\Local\Android\Sdk\platform-tools
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  11.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\education\abstractions\package.json: Unexpected token } in JSON at position 329
+      at JSON.parse (<anonymous>)
+      at C:\Users\dev\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\dev\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:304:30)
+      at C:\Users\dev\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "abstractions",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon --exec babel-node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@babel/core": "^7.7.2",
+      "@babel/preset-env": "^7.7.1",
+      "nodemon": "^1.19.4",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
