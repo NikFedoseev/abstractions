@@ -1,11 +1,11 @@
 export const createStore = () => {
   let store = {};
   return {
-    addItem: function({ group, name, salary }) {
+    addItem: function({ group, ...properties }) {
       if (!store[group]) {
         store[group] = [];
       }
-      store[group].push({ name, salary });
+      store[group].push(properties);
     },
     removeItem: function({ group, name }) {
       store[group] = store[group].filter(employee => employee.name !== name);
