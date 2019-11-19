@@ -19,6 +19,15 @@ export const createStore = () => {
   };
 };
 
+export const getExpenses = db => {
+  const store = db.getStore();
+  return Object.values(store)[0].reduce((sum, el) => {
+    return sum + el.salary;
+  }, 0);
+};
+
+export const getExpensesPerYear = db => getExpenses(db) * 12;
+
 export const makeEmployee = (group, name, salary) => ({
   group,
   name,
